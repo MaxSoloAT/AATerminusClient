@@ -26,6 +26,8 @@ public slots:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     QTcpSocket *socket = nullptr;
@@ -33,5 +35,6 @@ private:
     int port = 1331;
     QString ip = "";
     QByteArray Data;
+    int curr = 0;
 };
 #endif // MAINWINDOW_H
